@@ -10,4 +10,15 @@
 
 int main(int *argc, char *argv[])
 {
+	FILE *file;
+	Char *read
 
+	if (argc != 2)
+	{
+		fprintf(stderr, "USAGE: monty file\n");
+		exit(EXIT_FAILURE);
+	}
+	file = fopen(argv[1], RD_ONLY);
+	if (file != NULL)
+	{
+		fprintf(stderr, "Error: can't "
